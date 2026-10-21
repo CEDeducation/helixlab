@@ -1,0 +1,36 @@
+{
+  "name": "helixlab-openlab-ui",
+  "version": "0.7.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test:science": "node --test tests/science.test.mjs",
+    "lint:architecture": "node scripts/audit.mjs",
+    "verify": "npm run test:science && npm run lint:architecture && npm run typecheck",
+    "postinstall": "node scripts/copy-ketcher-assets.mjs"
+  },
+  "engines": {
+    "node": ">=24.20.0"
+  },
+  "dependencies": {
+    "next": "15.5.28",
+    "react": "19.1.10",
+    "react-dom": "19.1.10",
+    "@supabase/supabase-js": "^2.57.0",
+    "@supabase/ssr": "^0.12.7",
+    "ketcher-core": "3.18.0",
+    "ketcher-react": "3.18.0",
+    "ketcher-standalone": "3.18.0",
+    "molstar": "5.13.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "sass": "^1.83.0"
+  }
+}

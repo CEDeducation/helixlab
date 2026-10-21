@@ -1,0 +1,24 @@
+name: HelixLab checks
+on: [push, pull_request]
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm install --no-audit --no-fund
+      - run: npm run lint:architecture
+      - run: npm run test:science
+      - run: npm run typecheck
+      - run: npm run build
+  scientific-service:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r science-service/requirements.txt
+      - run: python -m pytest science-service/tests -q

@@ -1,0 +1,99 @@
+.miniForm input,.miniForm select,.coordinateRow input,.featureOptions select{font-size:12px}.smallPrimary{font-size:12px}.inspectorProperties .propertyLine{font-size:12px;padding:9px 0}.propertyLine select{font-size:11px}.inspectorAction{font-size:12px;padding:9px}.paneHeader{height:58px;padding:10px 17px}.paneHeader small{font-size:11px}
+.sequenceCanvas{padding:18px 20px 44px}.sequenceBlock{grid-template-columns:54px minmax(0,1fr);gap:12px;margin-bottom:17px}.sequenceCoordinate{font-size:11px}.annotationTrack{height:21px}.sequenceFeature{height:17px;font-size:9px;padding:1px 5px}.aminoRow,.baseRow{min-height:25px;font-size:11px}.aminoRow code,.baseRow code{font-size:12px;letter-spacing:.2em}.baseRow>span,.aminoRow>span,.baseRow>b{font-size:10px}.sequenceTicks{font-size:10px}
+.circularStage{padding:22px 10px}.advancedPlasmidSvg{width:min(100%,680px);filter:drop-shadow(0 16px 28px rgba(16,24,40,.045))}.mapName{font-size:14px}.mapLength{font-size:12px}.mapHint{font-size:10px}.mapCoordinate{font-size:9px}.featureLabel{font-size:10px;font-weight:700;fill:#384152}.featureLabel.active{font-size:11px}.mapControls button{font-size:11px;padding:7px 9px}.mapControls b{font-size:11px}
+.elementDetails{padding:14px}.elementDetails.empty{font-size:12px}.elementDetailTitle strong{font-size:13px}.elementDetailTitle span{font-size:11px}.detailStats span{font-size:11px}.miniSequence,.translationPreview code{font-size:11px}.translationPreview>span,.translationPreview small{font-size:10px}.rawSequenceEditor textarea{font-size:12px;line-height:1.6}
+
+/* Primer designer */
+.primerDesigner{background:linear-gradient(180deg,#fbfbff,#fff)}.inspectorHelp{font-size:12px;line-height:1.5;color:var(--muted);margin:0 0 10px}.primerDesignGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.primerDesignGrid label{display:grid;gap:4px}.primerDesignGrid label:last-child{grid-column:1/-1}.primerDesignGrid label span{font-size:10px;font-weight:750;color:#7b8494;text-transform:uppercase;letter-spacing:.05em}.primerDesignGrid input{width:100%;border:1px solid var(--line);border-radius:8px;background:#fff;padding:8px 9px;font-size:12px;outline:none}.primerDesignGrid input:focus{border-color:#b7b7e8;box-shadow:0 0 0 3px rgba(87,87,217,.08)}.primerDesignButton{width:100%;margin-top:9px}.primerResult{margin-top:11px;display:grid;gap:8px}.primerCandidate{border:1px solid var(--line);border-radius:10px;background:#fff;padding:9px}.primerCandidate>div{display:flex;justify-content:space-between;gap:7px;align-items:baseline}.primerCandidate strong{font-size:12px}.primerCandidate span{font-size:10px;color:var(--muted)}.primerCandidate code{display:block;margin-top:6px;padding:6px 7px;background:#f6f7fb;border-radius:7px;font-size:10px;line-height:1.45;overflow-wrap:anywhere}.ampliconStat{font-size:11px;color:var(--muted)}.ampliconStat b{color:var(--text)}.addPairButton{width:100%;font-size:12px;padding:8px}.primerCaution{font-size:10px;line-height:1.45;color:#7a8495;margin:0}
+
+@media (max-width:1280px){.moleculeBody{grid-template-columns:260px minmax(0,1fr)}.pageWithCopilot{grid-template-columns:minmax(0,1fr) 360px}}
+@media (max-width:720px){body{font-size:15px}.notebookDocument{padding:28px 22px 44px}.entryTitle{font-size:31px}.notebookSection textarea{font-size:16px}.moleculeBody,.moleculeBody.mode-sequence,.moleculeBody.mode-map{display:block}.moleculeInspector{max-height:none}.advancedPlasmidSvg{width:100%}}
+.moleculeSource a{font-size:11px;color:#4f54c8;text-decoration:none;border-bottom:1px solid #cfd2f6}.moleculeSource a:hover{color:#373bb0}
+
+/* OpenLab v1.0 — Benchling-inspired, original scientific workspace language */
+:root{
+  --bg:#f5f7f8;
+  --panel:#ffffff;
+  --panel-soft:#f8fafb;
+  --sidebar:#fbfcfc;
+  --text:#15201b;
+  --muted:#67746f;
+  --faint:#96a19c;
+  --line:#e1e7e4;
+  --line-strong:#cfd8d4;
+  --accent:#2f6f63;
+  --accent-2:#255a51;
+  --accent-soft:#e8f2ef;
+  --green:#2f7b61;
+  --green-soft:#e9f4ef;
+  --shadow:0 18px 48px rgba(25,43,36,.10);
+  --shadow-soft:0 8px 24px rgba(25,43,36,.075);
+  --radius:12px;
+  --radius-lg:16px;
+}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 82% 0%,rgba(65,136,116,.06),transparent 25%),
+    linear-gradient(180deg,#f8faf9 0,#f5f7f8 48%,#f2f5f4 100%);
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px;
+  letter-spacing:-.006em;
+}
+button,a,input,textarea,select{transition:border-color .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease,transform .18s ease,opacity .18s ease}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid rgba(47,111,99,.16);outline-offset:2px}
+
+/* App chrome */
+.shell{grid-template-columns:236px minmax(0,1fr)}
+.sidebar{width:236px;background:rgba(251,252,252,.95);backdrop-filter:blur(18px);border-right:1px solid #e0e6e3;padding:18px 12px}
+.brand{padding:2px 8px 18px;gap:10px}.brandMark{width:34px;height:34px;border-radius:9px;background:linear-gradient(145deg,#3d806f,#285f54);box-shadow:0 8px 18px rgba(47,111,99,.2)}
+.brand strong{font-size:15px}.brand span{font-size:11px;color:#7d8984}
+.workspaceSwitcher{border-radius:10px;border-color:#e2e8e5;box-shadow:0 1px 2px rgba(31,50,43,.03);padding:9px;background:#fff}
+.avatar{background:#e7f1ee;color:#2f6f63}
+.nav{gap:2px}.navLabel{padding:10px 10px 6px;font-size:10px;color:#98a39e}.navItem{border-radius:8px;padding:9px 10px;color:#56645e;font-size:14px;font-weight:540}
+.navItem svg{color:#7e8a85}.navItem:hover{background:#f0f5f3;color:#22342d;transform:translateX(2px)}.navItem:hover svg{color:#3b7b6c}
+.navItem.active{background:#e8f2ef;color:#245f53;font-weight:720;box-shadow:inset 3px 0 0 #3d806f}.navItem.active svg{color:#2f6f63}
+.sandboxBadge{border-color:#dce8e4;background:#f0f7f5;color:#356e61;border-radius:10px}.demoDot{background:#3f9a78}
+.topbar{height:64px;background:rgba(255,255,255,.89);border-bottom:1px solid #e2e7e4;backdrop-filter:blur(20px);box-shadow:0 1px 8px rgba(26,42,36,.025)}
+.searchBox{background:#f7f9f8;border-color:#dde4e0;border-radius:9px;height:40px}.searchBox:focus-within{background:#fff;border-color:#90b5aa;box-shadow:0 0 0 3px rgba(47,111,99,.09)}
+.topAvatar{background:linear-gradient(145deg,#273e35,#152921)}.localBadge{border-color:#dde4e0;color:#5e6d66;background:#fbfcfc}
+
+/* Motion and depth */
+.surfaceCard,.metricCard,.launchItem,.entryRow,.protocolCard,.inventoryTable,.sourceCard,.pilotCard,.securityCard,.elementRow,.primerCandidate{
+  transition:transform .2s cubic-bezier(.2,.7,.2,1),box-shadow .2s ease,border-color .2s ease,background .2s ease;
+}
+.surfaceCard:hover,.metricCard:hover,.launchItem:hover,.protocolCard:hover,.sourceCard:hover,.pilotCard:hover,.securityCard:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(27,49,40,.08);border-color:#d4ded9}
+.entryRow:hover,.elementRow:hover,.primerCandidate:hover{transform:scale(1.012);box-shadow:0 6px 18px rgba(25,43,36,.06)}
+.primaryButton,.smallPrimary{background:linear-gradient(180deg,#377a6a,#2c675a);border-color:#2f6f63;box-shadow:0 3px 9px rgba(47,111,99,.18);border-radius:8px}.primaryButton:hover,.smallPrimary:hover{background:linear-gradient(180deg,#2f6f63,#24574e);transform:translateY(-1px) scale(1.015);box-shadow:0 7px 18px rgba(47,111,99,.2)}
+.ghostButton{border-color:#dbe2df;border-radius:8px}.ghostButton:hover{background:#f6f9f8;border-color:#cbd7d2;transform:translateY(-1px)}
+.iconButton{border-radius:8px}.iconButton:hover{transform:scale(1.06)}
+
+/* Page typography */
+.pageHeading h1,.dashboardHeading h1{color:#17251f;font-weight:760;letter-spacing:-.035em}.pageHeading h1{font-size:33px}.dashboardHeading h1{font-size:38px}
+.pageHeading p,.dashboardHeading p{color:#65736d;font-size:15px}.sectionEyebrow{color:#75847d}
+
+/* Notebook: calmer document canvas, conversation-product level readability */
+.pageWithCopilot{grid-template-columns:minmax(0,1fr) 390px}.notebookPage{padding:28px 30px 48px}.notebookWorkspace{border:1px solid #e0e6e3;border-radius:16px;background:#fff;box-shadow:0 16px 44px rgba(25,43,36,.06);overflow:hidden;min-height:790px}
+.notebookList{background:#f8faf9}.notebookListHead{background:#fbfcfc;border-bottom:1px solid #e4e9e7}.entryList{padding:10px}.entryRow{border:1px solid transparent;border-radius:10px;padding:13px 12px;text-align:left}.entryRow:hover{background:#fff;border-color:#dfe6e3}.entryRow.active{background:#edf5f2;border-color:#d3e4de;box-shadow:inset 3px 0 0 #397969}
+.notebookDocument{max-width:920px;padding:50px 62px 76px}.entryTitle{font-size:39px;font-weight:690;letter-spacing:-.045em}.entryMetaRow select,.entryMetaRow input{border-radius:8px;border-color:#dde4e0;background:#fbfcfc}
+.notebookSection{padding:30px 0 10px;border-top:1px solid #edf1ef}.notebookSection:first-of-type{border-top:0}.notebookSection h2{font-size:19px;color:#1d2b25}.notebookSection textarea{font-size:16px;line-height:1.82;color:#22332c;border:1px solid transparent;border-radius:12px;padding:12px 13px;margin-left:-13px;width:calc(100% + 26px);background:transparent;resize:vertical}.notebookSection textarea:hover{background:#fafcfb;border-color:#edf1ef}.notebookSection textarea:focus{background:#fff;border-color:#b8d0c8;box-shadow:0 0 0 4px rgba(47,111,99,.07);outline:0}
+.copilot{background:#fbfcfc}.copilotComposer textarea{font-size:15px;border-radius:12px}.userMessage p,.assistantMessage>p,.answerBlock>p{font-size:15px;line-height:1.7}
+
+/* Molecular editor: dense but readable */
+.moleculeWorkspace{background:#f6f8f7;min-height:calc(100vh - 64px)}
+.moleculeHeader{background:#fff;border-bottom:1px solid #e0e6e3;padding:15px 20px;box-shadow:0 1px 7px rgba(26,42,36,.025)}
+.entityBadge{background:#e8f2ef!important;color:#286355!important;border:1px solid #d0e3dc!important;border-radius:7px!important;font-weight:800!important}
+.moleculeName{font-size:20px;font-weight:720;color:#1d2d26;letter-spacing:-.025em}.moleculeName:focus{background:#f6faf8;box-shadow:0 0 0 3px rgba(47,111,99,.08)}
+.moleculeMeta{font-size:13px;color:#718079}.moleculeSource>span{color:#2f6f63;background:#e9f4ef}.moleculeSource a{color:#2e7363;border-color:#bdd6ce}.moleculeActions{gap:8px}.importTrigger{white-space:nowrap}.hiddenFileInput{display:none}
+.moleculeToolbar{background:#fbfcfc;border-bottom:1px solid #e0e6e3;padding:9px 18px;box-shadow:0 1px 0 rgba(255,255,255,.8) inset}.workspaceTabs{background:#edf1ef;border:1px solid #dde4e0;border-radius:9px;padding:3px}.workspaceTabs button{border-radius:6px;color:#68756f;font-size:13px}.workspaceTabs button.active{background:#fff;color:#24342d;box-shadow:0 1px 3px rgba(25,43,36,.08)}
+.sequenceFind{border-radius:8px;border-color:#dbe2df;background:#fff}.sequenceFind:focus-within{border-color:#9ebeb5;box-shadow:0 0 0 3px rgba(47,111,99,.08)}.viewerToggles label{font-size:12px;color:#5f6f68}.compactMessage{margin:0;border-radius:0;border-left:0;border-right:0;background:#edf7f3;color:#2d6659;border-color:#d5e8e1;font-size:13px}
+.moleculeBody{grid-template-columns:290px minmax(0,1fr) minmax(460px,.9fr);background:#f6f8f7}.moleculeBody.mode-sequence,.moleculeBody.mode-map{grid-template-columns:290px minmax(0,1fr)}
+.moleculeInspector{background:#fbfcfc;border-right:1px solid #e0e6e3}.inspectorSection{padding:17px;border-bottom:1px solid #e6ebe8}.inspectorHeading strong{font-size:14px;color:#27372f}.inspectorHeading span,.inspectorKicker{font-size:10px;color:#84918b}.elementRow{border-radius:8px;border:1px solid transparent;padding:9px;background:transparent}.elementRow:hover{background:#fff;border-color:#dfe6e3}.elementRow.active{background:#edf5f2;border-color:#cfe1db;box-shadow:inset 3px 0 0 #397969}.elementRow strong{font-size:13px}.elementRow small{font-size:11px;color:#798780}.compactDetails{border-radius:9px}.compactDetails[open]{background:#fff;box-shadow:0 5px 18px rgba(28,48,40,.05)}
+.primerDesigner{background:linear-gradient(180deg,#f5faf8,#fbfcfc)}.primerDesignGrid input,.miniForm input,.miniForm select,.coordinateRow input,.featureOptions select{border-color:#d9e2de;border-radius:7px}.primerCandidate{border-color:#dfe6e3;border-radius:9px}.primerCandidate code{background:#f4f7f6}.primerWarnings{display:block;margin-top:6px;font-size:10px;color:#91621f}
+.sequenceMapPane,.plasmidMapPane{background:#fff}.paneHeader{height:58px;background:#fbfcfc;border-bottom:1px solid #e3e8e6}.paneHeader strong{font-size:14px;color:#27372f}.sequenceCanvas{background:#fff}.sequenceFeature{border-radius:4px;box-shadow:0 2px 4px rgba(0,0,0,.05)}
+
+/* Circular plasmid map: CD-like visual, direct manipulation */
+.circularStage{position:relative;display:grid;place-items:center;padding:28px 18px 12px;min-height:640px;background:
+  radial-gradient(circle at 50% 45%,rgba(54,121,103,.05),transparent 32%),
+  linear-gradient(180deg,#ffffff 0,#fbfcfc 100%)}
